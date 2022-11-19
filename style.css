@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    height: 100vh;
+    background-color: #282D35;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 90px;
+    padding: 30px 25px;
+}
+
+.nav--logo_text, .nav--title {
+    margin: 0;
+}
+
+.nav--logo_text {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav--title {
+    color: #DEEBF8;
+    font-weight: 600;
+}
+
+.nav--icon {
+    height: 30px;
+    margin-right: 7px;
+}
+
+main {
+    height: 75vh;
+    padding: 57px 27px;
+    color: white;
+    background-image: url(./images/react-icon-large.png);
+    background-repeat: no-repeat;
+    background-position: right 75%;
+}
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main--facts {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.main--facts > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #21222A;
+    padding: 10px 2px;
+    color: #DEEBF8;
+    position: absolute;
+    bottom: 0;
+}
+
+footer small {
+    display: block;
+    margin-bottom: 7px;
+}
+
+a {
+    color: #61DAFB;
+    font-size: .8rem;
+}
+
+@media (min-width:700px) {
+    body {
+        width:100%;
+        max-width: 700px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:415px) {
+    * {
+        font-size: .95rem;
+    }
+    
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    nav {
+        height: 60px;
+        padding: 15px 7px;
+    }
+    
+    main {
+    height: 65vh;
+    padding: 20px 15px;
+    }
+    
+    .main--facts {
+    margin-top: 15px;
+    max-width: 300px;
+    }
+    
+    .main--facts > li {
+        line-height: 17px;
+        padding-block: 8px;
+    }
+   
+}
+
+@media (max-width:350px){
+    body {
+        position: relative;
+    }
+    .nav--title {
+        position: absolute;
+        right: 3px;
+        max-width: 70px;
+    }
+}
